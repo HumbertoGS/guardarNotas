@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title><%= titulo %></title>
+    <%- include('partials/head'); %>
+</head>
+<body class="container">
+    <%- include('partials/header'); %>
+
+    <div class="contenedor">
+        <div class="row justify-content-center">
+            <div class="col-4 conten_Form">
+                <form method="post">
+                    <div class="form-group mb-3">
+                        <p class="text-center fw-bold h3 text-primary">Nueva Entrada</p>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="titulo" class="form-label fw-bold fs-5  text-primary">Titulo</label>
+                        <input type="text" name="titulo" id="titulo" class="form-control" placeholder="Titulo" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="tarea" class="form-label fw-bold fs-5  text-primary">Tarea</label>
+                        <textarea name="tarea" id="tarea" rows="4" class="form-control" required></textarea>
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="submit" value="Añadir" class="btn btn-primary w-100">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <%- include('partials/footer'); %>
+</body>
+</html>

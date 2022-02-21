@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(113, 185, 248);
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+header{
+    padding-top: 25px;
+}
+
+.contenedor{
+    padding-top: 30px;
+}
+
+.conten_Form{
+    background-color: #fff;
+    border: solid 2px rgb(74, 148, 233);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 10px 10px 0px #00000033;
+}
+
+.card_sh{
+    box-shadow: 10px 10px 0px #00000033;
+}
